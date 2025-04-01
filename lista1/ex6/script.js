@@ -1,7 +1,7 @@
 const image = document.getElementById("image");
 const changeButton = document.getElementById("changeButton");
 
-const images = ["imagens/download.jpeg", "imagens/download (1).jpeg"]; // Substitua pelos nomes das suas imagens
+const images = ["imagens/download.jpeg", "imagens/download (1).jpeg", 'imagens/the.jpg', "imagens/unknown.png"]; // Substitua pelos nomes das suas imagens
 let currentIndex = 0;
 
 changeButton.addEventListener("click", () => {
