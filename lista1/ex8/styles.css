@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: rgb(195, 0, 255);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#clock {
+    font-size: 20vw; /* Ocupa toda a área disponível */
+}
