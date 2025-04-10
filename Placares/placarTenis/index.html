@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar de Tênis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="input-container">
+        <input type="text" id="nomeTimeA" placeholder="Nome do Jogador A">
+        <input type="text" id="nomeTimeB" placeholder="Nome do Jogador B">
+    </div>
+
+    <div class="placar-container">
+        <div class="time">
+            <span class="nome" id="labelTimeA">Jogador A</span>
+            <span class="pontos" id="pontosA">0</span>
+            <span class="games">Games: <span id="gamesA">0</span></span>
+            <button onclick="adicionarPonto('A')">+1 Ponto</button>
+            <button onclick="removerPonto('A')">-1 Ponto</button>
+        </div>
+
+        <div class="sets-container">
+            <button onclick="alterarSetManual('A', 1)">+1 Set</button>
+            <button onclick="alterarSetManual('A', -1)">-1 Set</button>
+            <span class="sets" id="setsA">0</span>
+            <span class="separador">-</span>
+            <span class="sets" id="setsB">0</span>
+            <button onclick="alterarSetManual('B', 1)">+1 Set</button>
+            <button onclick="alterarSetManual('B', -1)">-1 Set</button>
+        </div>
+
+        <div class="time">
+            <span class="nome" id="labelTimeB">Jogador B</span>
+            <span class="pontos" id="pontosB">0</span>
+            <span class="games">Games: <span id="gamesB">0</span></span>
+            <button onclick="adicionarPonto('B')">+1 Ponto</button>
+            <button onclick="removerPonto('B')">-1 Ponto</button>
+        </div>
+    </div>
+
+    <button class="reset-btn" onclick="resetPlacar()">Zerar Placar</button>
+
+    <div class="historico">
+        <h2>Histórico</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data e Hora</th>
+                    <th>Jogador</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="historicoLista"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

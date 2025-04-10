@@ -19,13 +19,14 @@ input {
     align-items: center;
     gap: 1.25rem;
     margin-top: 1.25rem;
-    background-color: #222;
+    background-color: #222222;
     padding: 1.25rem;
     border-radius: 0.625rem;
     width: 90%;
     max-width: 22rem;
     margin: auto;
     position: relative;
+    flex-wrap: wrap;
 }
 .time {
     display: flex;
@@ -34,6 +35,7 @@ input {
     background-color: black;
     padding: 0.625rem;
     border-radius: 0.3125rem;
+    flex: 1 1 40%;
 }
 .nome {
     font-size: 1.125rem;
@@ -50,6 +52,12 @@ input {
     text-align: center;
     border: 0.125rem solid yellow;
     border-radius: 0.3125rem;
+}
+.games {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: lightgreen;
 }
 .sets-container {
     position: absolute;

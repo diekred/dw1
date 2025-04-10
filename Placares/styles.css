@@ -1,0 +1,36 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+body {
+    font-family: 'UnifrakturCook', cursive;
+    background: radial-gradient(circle, #1b1b1b, #000000);
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px #000;
+}
+
+a {
+    text-decoration: none;
+    color: #ff2c2c;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px 35px;
+    margin: 12px;
+    border: 2px solid #ff2c2c;
+    border-radius: 10px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 44, 44, 0.5);
+}
+
+a:hover {
+    background-color: #ff2c2c;
+    color: #fff;
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(255, 44, 44, 0.8);
+}
