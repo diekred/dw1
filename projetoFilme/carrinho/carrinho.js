@@ -39,7 +39,14 @@ if (carrinho.length === 0) {
 }
 
 document.getElementById('finalizar-compra').addEventListener('click', () => {
-  localStorage.removeItem('carrinho');
+  const carrinhoAtual = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+  if (carrinhoAtual.length === 0) {
+    alert("Seu carrinho está vazio. Adicione produtos antes de finalizar a compra.");
+    return;
+  }
+
+  // Se tiver itens, segue para pagamento
   window.location.href = '../pagamento/pagamento.html';
 });
 
